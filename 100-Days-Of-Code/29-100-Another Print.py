@@ -33,6 +33,9 @@ def RandomColors():
         quit()
     return Colors
 
-time.sleep(5)
-os.system("cls")
-print("sds")
+time.sleep(0.5)
+os.system('cls')
+print("Super Subroutine\n")
+print(f"With my {YELLOW}new program{RESET} I can just {RandomColors()} that word will appear in the color I set it to.\n")
+print(f"With no {CYAN}weird gaps{RESET}.\n")
+print("EPIC\n")
