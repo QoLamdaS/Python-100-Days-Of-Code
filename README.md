@@ -2,4 +2,4 @@ Replit 100 Days Of Code is the free course at Replit where you can learn about P
 Please give me the feedbacks for me to improve my programming skill.
 
 Credit :
-David Morgan : Instructor
+David Morgan as an Instructor
