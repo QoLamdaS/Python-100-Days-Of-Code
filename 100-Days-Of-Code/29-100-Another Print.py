@@ -12,5 +12,7 @@ RESET   = '\033[39m'
 
 def RandomColors():
     Colors = random.choice([BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE])
+    if Colors == BLACK:
+        Colors = f"Black('and') {BLACK}and{RESET}"
     return Colors
-print(f"{RandomColors()}Testing{RESET}")
+TheColor = RandomColors()
