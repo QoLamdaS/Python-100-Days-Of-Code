@@ -25,11 +25,28 @@ NEGATIVE = "\033[7m"
 CROSSED = "\033[9m"
 END = "\033[0m"
 
+os.system('cls')
+
 print(f"\t\t\t{RED}={LIGHT_WHITE}={BLUE}={END} Music App {BLUE}={LIGHT_WHITE}={RED}={END}\t\t\t\n")
 print(f"\t\t{LIGHT_WHITE}RADIO GAGA{END}\n\t\tQueen")
 print(f"{LIGHT_WHITE}PREV\n\t{GREEN}NEXT\n\t\t{PURPLE}PAUSE{END}\n")
 
-time.sleep(1)
+time.sleep(10)
 os.system('cls')
 
-#text2_1 = "WELCOME TO"
+text = "WELCOME TO"
+print(f"{LIGHT_WHITE}{text:^100}")
+text = "--  ARMBOOK  --"
+print(f"{BLUE}{text:^100}")
+text = "Definitely not a rip off"
+print(f"{END}{text:>100}")
+text = "a certain other social"
+print(f"{text:>100}")
+text = "networking site"
+print(f"{text:>100}")
+text = "Honest."
+print(f"{RED}{text:^100}")
+text = "Username: "
+UserInput = input(f"{LIGHT_WHITE}{text:^100}")
+text = "Password: "
+UserInput = input(f"{LIGHT_WHITE}{text:^100}")
