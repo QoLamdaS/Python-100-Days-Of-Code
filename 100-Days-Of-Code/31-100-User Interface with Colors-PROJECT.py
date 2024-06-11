@@ -27,8 +27,9 @@ END = "\033[0m"
 
 print(f"\t\t\t{RED}={LIGHT_WHITE}={BLUE}={END} Music App {BLUE}={LIGHT_WHITE}={RED}={END}\t\t\t\n")
 print(f"\t\t{LIGHT_WHITE}RADIO GAGA{END}\n\t\tQueen")
-time.sleep(5)
+print(f"{LIGHT_WHITE}PREV\n\t{GREEN}NEXT\n\t\t{PURPLE}PAUSE{END}\n")
+
+time.sleep(1)
 os.system('cls')
 
-#? Testing
-#shds
+#text2_1 = "WELCOME TO"
