@@ -9,7 +9,7 @@ def ToDoLists():
 while True:
     UserLists = input("Choose one: 'add', 'remove', 'edit', 'view', or 'exit'? ")
     if UserLists == "view":
-        print(f"Here is your TO DO LISTS:{AllLists}")
+        print(f"Here is your All To Do List(s): {AllLists}")
     elif UserLists == "add":
         item = input("Add: ")
         AllLists.append(item) 
