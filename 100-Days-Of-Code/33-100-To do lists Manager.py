@@ -1,4 +1,4 @@
-AllLists = [] #! Testing only
+AllLists = []
 
 def ToDoLists():
     print("\nTo Do List(s):")
