@@ -1,5 +1,5 @@
 import os, time
-#! TESTING
+
 AllEmailLists = []
 
 def ListsEmail():
@@ -10,10 +10,12 @@ def ListsEmail():
         print(f"{counter}: {Email}")
 
 def SPAMMING():
-    str(AllEmailLists)
+    str(AllEmailLists) #! To avoid Bug
     print("SPAMMING!!!\n")
     counter = 0
-    if len(AllEmailLists) <= 10:
+    #? Why using If-Statements for this function?
+    #* To avoid bug occurred when the total of the email list is less than from the END or range(0, 10)
+    if len(AllEmailLists) <= 10: #! len() built-in function start count at 1 (one) not 0 (zero) {The list or x = [] always start at 0 (zero)}
         for index in range(0, len(AllEmailLists)):
             counter += 1
             print(f"Email {counter}\nDear, {AllEmailLists[index]}\n")
@@ -30,7 +32,7 @@ def SPAMMING():
             os.system('cls')
         quit()
     else:
-        for _ in range(999):
+        for _ in range(999): #! Underscore '_' used for ignoring value or throw-away (useless) variable
             print("\nACHTUNG!\n")
         exit()
 
