@@ -1,7 +1,7 @@
 import os, time
 #! TESTING
 AllEmailLists = []
-
+#! All Notes are from '34-100-Still No Name' in the Study-Notes branch
 def ListsEmail():
     print("\nLists of Email(s)\n")
     counter = 0
