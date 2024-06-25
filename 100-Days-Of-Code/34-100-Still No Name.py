@@ -9,6 +9,31 @@ def ListsEmail():
         counter += 1
         print(f"{counter}: {Email}")
 
+def SPAMMING():
+    str(AllEmailLists)
+    print("SPAMMING!!!\n")
+    counter = 0
+    if len(AllEmailLists) <= 10:
+        for index in range(0, len(AllEmailLists)):
+            counter += 1
+            print(f"Email {counter}\nDear, {AllEmailLists[index]}\n")
+            print("It has come to our attention that you're missing out on the amazing Replit 100 days of code. We insist you do it right away. If you don't we will pass on your email address to every spammer we've ever encountered and also sign you up to the My Little Pony newsletter, because that's neat. We might just do that anyway.\nLove and hugs,\nWalter White VII\n")
+            time.sleep(5)
+            os.system('cls')
+        quit()
+    elif len(AllEmailLists) > 10:
+        for index in range(0, 10):
+            counter += 1
+            print(f"Email {counter}\nDear, {AllEmailLists[index]}\n")
+            print("It has come to our attention that you're missing out on the amazing Replit 100 days of code. We insist you do it right away. If you don't we will pass on your email address to every spammer we've ever encountered and also sign you up to the My Little Pony newsletter, because that's neat. We might just do that anyway.\nLove and hugs,\nWalter White VII\n")
+            time.sleep(5)
+            os.system('cls')
+        quit()
+    else:
+        for _ in range(999):
+            print("\nACHTUNG!\n")
+        exit()
+
 os.system('cls')
 while True:
     print("\nSPAMMER Inc.\n")
@@ -26,10 +51,10 @@ while True:
         os.system('cls')
         print("\nHere is the list of all emails: ")
         ListsEmail()
-        time.sleep(15)
+        time.sleep(10)
     elif UserInput == "4":
-        print("UNFINISHED")
-        #! Unfinished, still working for this
+        os.system('cls')
+        SPAMMING()
     else:
         os.system('cls')
         print("\nINVALID INPUT!!!\n")
