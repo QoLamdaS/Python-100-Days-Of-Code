@@ -11,7 +11,7 @@ def ToDoLists():
 while True:
     print("\nExtended TODO List Manager\n")
     UserInput = input("Do you want to 'view', 'add', 'edit', or 'remove' an item from the to do list or Delete all the list 'reset'? ")
-    if UserInput == "view":
+    if UserInput == "view" or UserInput == "View" or UserInput == "VIEW":
         ToDoLists()
     elif UserInput == "add": #! NEED TO ADD 'DO NOT ADD DUPLICATES'
         Todo = str(input("Add: "))
