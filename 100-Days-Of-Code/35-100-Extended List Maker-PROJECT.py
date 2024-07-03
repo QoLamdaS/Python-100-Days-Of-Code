@@ -38,8 +38,8 @@ while True:
             AllList.append(Todo)
         else:
             print(f"{Todo} is not in the list.")
-    elif UserInput == "reset":
-        AllList.clear()
+    elif UserInput == "reset" or UserInput == "Reset" or UserInput == "RESET":
+        AllList.clear() #! NEED TO ADD NOTE FOR THIS LINE
         print("\nAll TODO(s) have been deleted from the list.\n")
     else:
         print("Invalid input. Please try again.\n")
