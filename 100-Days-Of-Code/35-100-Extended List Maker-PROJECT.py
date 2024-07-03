@@ -4,9 +4,9 @@ AllList = []
 
 def ToDoLists():
     Number = 0
-    for Todo in AllList:
+    for TheItem in AllList:
         Number += 1
-        print(f"No. {Number}: {Todo}")
+        print(f"No. {Number}: {TheItem}")
 
 while True:
     os.system('cls')
