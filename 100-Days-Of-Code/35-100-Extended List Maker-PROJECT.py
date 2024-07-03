@@ -30,9 +30,10 @@ while True:
             if UserInput == "yes" or UserInput == "Yes" or UserInput == "YES" or UserInput == "y" or UserInput == "Y":
                 AllList.remove(Todo)
             elif UserInput == "no" or UserInput == "No" or UserInput == "NO" or UserInput == "n" or UserInput == "N":
-                print(f"You cancelled to remove '{Todo}' from the list\n")
+                print(f"\nYou cancelled to remove '{Todo}' from the list\n")
+                time.sleep(5)
             else:
-                print("Invalid input. Please try again.\n")
+                print("\nInvalid input. Please try again.\n")
                 exit()
         else:
             print(f"{Todo} is not in the list.")
