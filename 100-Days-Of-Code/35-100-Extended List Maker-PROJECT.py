@@ -36,7 +36,8 @@ while True:
                 print("\nInvalid input. Please try again.\n")
                 exit()
         else:
-            print(f"{Todo} is not in the list.")
+            print(f"\n'{Todo}' is not in the list.\n")
+            time.sleep(5)
     elif UserInput == "edit" or UserInput == "Edit" or UserInput == "EDIT":
         Todo = str(input(f"\n{AllList}\nWhich one do you want to edit: "))
         if Todo in AllList:
