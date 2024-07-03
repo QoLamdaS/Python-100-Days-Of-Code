@@ -13,9 +13,12 @@ while True:
     UserInput = input("Do you want to 'view', 'add', 'edit', or 'remove' an item from the to do list or Delete all the list 'reset'? ")
     if UserInput == "view" or UserInput == "View" or UserInput == "VIEW":
         ToDoLists()
-    elif UserInput == "add" or UserInput == "Add" or UserInput == "ADD": #! NEED TO ADD 'DO NOT ADD DUPLICATES'
+    elif UserInput == "add" or UserInput == "Add" or UserInput == "ADD":
         Todo = str(input("Add: "))
-        AllList.append(Todo)
+        if Todo in AllList:
+            print(f"'{Todo}' already exists")
+        else:
+            AllList.append(Todo)
     elif UserInput == "remove" or UserInput == "Remove" or UserInput == "REMOVE":
         Todo = str(input(f"{AllList}\nRemove: "))
         if Todo in AllList:
