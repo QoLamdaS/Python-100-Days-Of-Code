@@ -42,9 +42,13 @@ while True:
         Todo = str(input(f"\n{AllList}\nWhich one do you want to edit: "))
         if Todo in AllList:
             print(f"\n'{Todo}'")
-            AllList.remove(Todo)
-            Todo = str(input("Edit: "))
-            AllList.append(Todo)
+            Todo_Edit = str(input("Edit: "))
+            if Todo_Edit in AllList:
+                print(f"\n'{Todo_Edit}' is already in the list.\n")
+                time.sleep(5)
+            else:
+                AllList.remove(Todo)
+                AllList.append(Todo_Edit)
         else:
             print(f"\n'{Todo}' is not in the list.\n")
             time.sleep(5)
