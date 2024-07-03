@@ -41,12 +41,13 @@ while True:
     elif UserInput == "edit" or UserInput == "Edit" or UserInput == "EDIT":
         Todo = str(input(f"\n{AllList}\nWhich one do you want to edit: "))
         if Todo in AllList:
-            print(Todo)
+            print(f"\n'{Todo}'")
             AllList.remove(Todo)
             Todo = str(input("Edit: "))
             AllList.append(Todo)
         else:
-            print(f"{Todo} is not in the list.")
+            print(f"\n'{Todo}' is not in the list.\n")
+            time.sleep(5)
     elif UserInput == "reset" or UserInput == "Reset" or UserInput == "RESET":
         AllList.clear() #! NEED TO ADD NOTE FOR THIS LINE
         print("\nAll TODO(s) have been deleted from the list.\n")
