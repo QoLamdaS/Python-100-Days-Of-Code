@@ -51,6 +51,7 @@ while True:
     elif UserInput == "reset" or UserInput == "Reset" or UserInput == "RESET":
         AllList.clear() #! NEED TO ADD NOTE FOR THIS LINE
         print("\nAll TODO(s) have been deleted from the list.\n")
+        time.sleep(5)
     else:
         print("Invalid input. Please try again.\n")
         quit()
