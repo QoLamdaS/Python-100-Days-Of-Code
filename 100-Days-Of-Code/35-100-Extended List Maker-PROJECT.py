@@ -53,7 +53,7 @@ while True:
             print(f"\n'{Todo}' is not in the list.\n")
             time.sleep(5)
     elif UserInput == "reset" or UserInput == "Reset" or UserInput == "RESET":
-        AllList.clear() #! NEED TO ADD NOTE FOR THIS LINE
+        AllList.clear()
         print("\nAll TODO(s) have been deleted from the list.\n")
         time.sleep(5)
     else:
