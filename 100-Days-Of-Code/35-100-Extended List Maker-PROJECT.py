@@ -19,7 +19,8 @@ while True:
     elif UserInput == "add" or UserInput == "Add" or UserInput == "ADD":
         Todo = str(input("Add: "))
         if Todo in AllList:
-            print(f"'{Todo}' already exists")
+            print(f"\n'{Todo}' already exists\n")
+            time.sleep(5)
         else:
             AllList.append(Todo)
     elif UserInput == "remove" or UserInput == "Remove" or UserInput == "REMOVE":
