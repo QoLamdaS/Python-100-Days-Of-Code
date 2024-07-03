@@ -12,6 +12,7 @@ while True:
     os.system('cls')
     print("\nExtended TODO List Manager\n")
     UserInput = input("Do you want to 'view', 'add', 'edit', or 'remove' an item from the to do list or Delete all the list 'reset'? ")
+    #* https://www.programiz.com/sites/tutorial2program/files/python-elif.png #Link for the image of IF-STATEMENT
     if UserInput == "view" or UserInput == "View" or UserInput == "VIEW":
         os.system('cls')
         ToDoLists()
