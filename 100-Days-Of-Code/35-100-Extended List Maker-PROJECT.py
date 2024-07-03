@@ -16,7 +16,7 @@ while True:
     elif UserInput == "add" or UserInput == "Add" or UserInput == "ADD": #! NEED TO ADD 'DO NOT ADD DUPLICATES'
         Todo = str(input("Add: "))
         AllList.append(Todo)
-    elif UserInput == "remove":
+    elif UserInput == "remove" or UserInput == "Remove" or UserInput == "REMOVE":
         Todo = str(input(f"{AllList}\nRemove: "))
         if Todo in AllList:
             UserInput = str(input(f"Are you sure you want to remove '{Todo}' from the list? "))
