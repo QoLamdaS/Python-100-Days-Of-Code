@@ -29,7 +29,7 @@ while True:
                 exit()
         else:
             print(f"{Todo} is not in the list.")
-    elif UserInput == "edit":
+    elif UserInput == "edit" or UserInput == "Edit" or UserInput == "EDIT":
         Todo = str(input(f"\n{AllList}\nWhich one do you want to edit: "))
         if Todo in AllList:
             print(Todo)
