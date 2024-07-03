@@ -13,7 +13,9 @@ while True:
     print("\nExtended TODO List Manager\n")
     UserInput = input("Do you want to 'view', 'add', 'edit', or 'remove' an item from the to do list or Delete all the list 'reset'? ")
     if UserInput == "view" or UserInput == "View" or UserInput == "VIEW":
+        os.system('cls')
         ToDoLists()
+        time.sleep(15)
     elif UserInput == "add" or UserInput == "Add" or UserInput == "ADD":
         Todo = str(input("Add: "))
         if Todo in AllList:
