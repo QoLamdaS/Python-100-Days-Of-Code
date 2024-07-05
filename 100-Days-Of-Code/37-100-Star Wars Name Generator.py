@@ -1,4 +1,7 @@
+import os, time
+
 while True:
+    os.system('cls')
     print("\nSTARS WARS NAME GENERATOR\n")
     
     FirstName = input("First Name: ").strip().capitalize()
@@ -7,3 +10,4 @@ while True:
     TheCity = input("City Name: ").strip().lower()
 
     print(f"\nYour Star Wars name is {FirstName[:3:]}{LastName[:3:]} {Mom_Maiden[:2:]}{TheCity[4::]}\n")
+    time.sleep(10)
