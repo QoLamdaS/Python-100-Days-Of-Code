@@ -1,1 +1,2 @@
-print("I love Pizza!")
+print("\nSTARS WARS NAME GENERATOR\n")
+
