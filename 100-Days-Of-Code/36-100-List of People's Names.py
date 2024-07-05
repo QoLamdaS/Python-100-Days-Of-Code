@@ -5,8 +5,8 @@ while True:
     Last_Name = input("Last Name: ").strip().capitalize()
     FullName = f"{First_Name} {Last_Name}"
     if FullName in List_Names:
-        print(f"ERROR: DUPLICATE!!!{FullName}")
+        print(f"\nERROR: DUPLICATE!!!\n{FullName}\n")
     else:
         List_Names.append(FullName)
-        print(FullName)
+        print(f"\n{FullName}\n")
 
