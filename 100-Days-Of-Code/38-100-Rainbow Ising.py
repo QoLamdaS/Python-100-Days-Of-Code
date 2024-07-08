@@ -1,2 +1,2 @@
 
-print("\nTESTING\n")
+print("Rainbow-Ising")
