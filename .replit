@@ -1,4 +1,9 @@
 modules = ["python-3.12"]
-
+run = "python3 100-Days-Of-Code/38-100-Rainbow_Ising.py"
+#run = "python3 {Folder_Name}/{File_Name.py}"
 [nix]
 channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "python3 100-Days-Of-Code/38-100-Rainbow_Ising.py"]
+#run = ["sh", "-c", "python3 {Folder_Name}/{File_Name.py}"]
