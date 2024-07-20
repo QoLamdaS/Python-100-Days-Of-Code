@@ -1,5 +1,6 @@
 
 #* Important Notes
+#! This is older version for 38-100-Rainbow_Ising.py
 
 #! This is a For Loop
 #for i in "BanaNA":
