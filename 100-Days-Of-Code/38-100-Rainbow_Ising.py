@@ -6,3 +6,5 @@ END = "\033[0m"
 print("TESTING ONLY")
 print("\nRainbow-Ising\n")
 SentenceInput = input("What sentence do you want to RAINBOW-ISING? ")
+
+#! Testing AGAIN
