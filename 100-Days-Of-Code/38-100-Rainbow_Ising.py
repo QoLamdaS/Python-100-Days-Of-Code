@@ -6,11 +6,6 @@ YELLOW = "\033[1;33m"
 GREEN = "\033[0;32m"
 END = "\033[0m"
 
-Letter_Blue = ["b"]
-Letter_Red = ["r"]
-Letter_Yellow = ["Y"]
-Letter_Green = ["G"]
-
 os.system('clear') #os.system('cls') #! Use this for Windows OS
 print("\nRainbow-Ising\n")
 time.sleep(3)
