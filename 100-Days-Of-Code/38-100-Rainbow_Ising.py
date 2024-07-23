@@ -18,3 +18,8 @@ for letter in myString:
 #! This is End parameter for print
 print("\n\nThis is the first line", end = "")
 print("SECOND LINE")
+
+#* Notes about Python Functions
+#! Please read the article
+#Link : https://www.programiz.com/python-programming/function
+
