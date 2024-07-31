@@ -12,3 +12,15 @@ print("\nRainbow-Ising\n")
 time.sleep(3)
 SentenceInput = input("What sentence do you want to RAINBOW-ISING? ")
 
+for TheLetter in SentenceInput:
+    if TheLetter.lower() == "r":
+        print(RED, end = "")
+    elif TheLetter.lower() == "b":
+        print(BLUE, end = "")
+    elif TheLetter.upper() == "G":
+        print(GREEN, end = "")
+    elif TheLetter.upper() == "Y":
+        print(YELLOW, end = "")
+    elif TheLetter == " ":
+        print(END, end = "")
+    print(TheLetter, end = "")
