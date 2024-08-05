@@ -1,2 +1,4 @@
 
-print("\nDay 39 PROJECT DAY\n")
+print("\nHangman Game\n")
+input("Choose a letter: ")
+
