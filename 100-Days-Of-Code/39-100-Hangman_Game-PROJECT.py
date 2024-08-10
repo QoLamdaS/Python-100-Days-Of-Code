@@ -12,5 +12,5 @@ while True:
     Chosen_Answer = ChosenWord()
     print("\nHangman Game\n")
     time.sleep(3)
-    LetterInput = input("Choose a letter: ")
+    LetterInput = input("Choose a letter: ").lower()
 
