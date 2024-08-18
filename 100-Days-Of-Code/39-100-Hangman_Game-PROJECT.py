@@ -2,27 +2,45 @@ import random
 import os
 import time
 
-ListOfWords = ["british", "suave", "integrity", "accent", "evil", "gen", "downtown", "downstairs", "streamline", "funnel"]
-Already_Picked_Letter = []
-def ChosenWord():
-    The_Chosen_Word = random.choice(ListOfWords)
-    return The_Chosen_Word
-Chosen_Answer = ChosenWord()
+listOfWords = ["apple", "orange", "grapes", "pear"]
+letterPicked = []
+lives = 6
+
+word = random.choice(listOfWords)
 
 while True:
-    os.system('clear') #os.system('cls') Windows OS #os.system('clear') Linux and Mac OS
-    print("\nHangman Game\n")
-    time.sleep(3)
-    LetterInput = input("Choose a letter: ").lower()
-    if LetterInput in Already_Picked_Letter:
-        print("You have already picked this letter. TRY AGAIN!")
-        time.sleep(3)
+    time.sleep(1)
+    os.system("clear")
+    letter = input("Choose a letter: ").lower()
+    
+    if letter in letterPicked:
+        print("You've tried that before")
+        continue
+        
+    letterPicked.append(letter)
+    
+    if letter in word:
+        print("You found a letter")
     else:
-        Already_Picked_Letter.append(LetterInput)
-        if LetterInput in Chosen_Answer:
-            print("You found a letter! YEAY!")
-            time.sleep(3)
+        print("Nope, not in there")
+        lives -= 1
+    
+    allLetters = True
+    print()
+    for i in word:
+        if i in letterPicked:
+            print(i, end="")
         else:
-            print("NOPE!")
-            time.sleep(3)
-             
+            print("_", end="")
+            allLetters = False
+    print()
+
+    if allLetters:
+        print(f"You won with {lives} left!")
+        break
+
+    if lives<=0:
+        print(f"You ran out of lives! The answer was {word}")
+        break
+    else:
+        print(f"Only {lives} left")
