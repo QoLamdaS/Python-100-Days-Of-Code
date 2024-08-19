@@ -1,2 +1,4 @@
+import os
 
-print("Ich liebe Pizza")
+os.system('cls')
+print("\nContact Card\n")
