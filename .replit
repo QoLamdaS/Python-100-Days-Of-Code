@@ -1,9 +1,9 @@
 modules = ["python-3.12"]
-run = "python3 100-Days-Of-Code/39-100-Hangman_Game-PROJECT.py"
+run = "python3 100-Days-Of-Code/40-100-Contact_Card.py"
 #run = "python3 {Folder_Name}/{File_Name.py}"
 [nix]
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "python3 100-Days-Of-Code/39-100-Hangman_Game-PROJECT.py"]
+run = ["sh", "-c", "python3 100-Days-Of-Code/40-100-Contact_Card.py"]
 #run = ["sh", "-c", "python3 {Folder_Name}/{File_Name.py}"]
