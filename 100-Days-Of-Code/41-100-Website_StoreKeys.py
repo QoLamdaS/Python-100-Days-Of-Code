@@ -5,3 +5,5 @@ RatingInput = str(input("Enter rating: "))
 
 TheDictionary = {"Name": NameInput, "URL": UrlInput, "Description": DescInput, "Rating": RatingInput}
 
+for Key, Value in TheDictionary.items():
+    print(f"{Key}: {Value}")
