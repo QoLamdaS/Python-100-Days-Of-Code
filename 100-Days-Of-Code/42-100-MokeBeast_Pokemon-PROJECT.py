@@ -1,1 +1,4 @@
-print("\nIch liebe Pizza\n")
+import os
+
+os.system('cls')
+print("MokeBeast Pokemon\n")
